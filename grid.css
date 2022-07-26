@@ -1,0 +1,29 @@
+.grid {
+    width: 100%;
+    /* bt neu khai bao display: block roi thi no tu hieu la lay 100%; */
+    display: block;
+    padding: 0;
+}
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row {
+    display: flex; // chua cac column giup cac column nam theo chieu ngang
+    flex-wrap: wrap; // khi tong chieu ngang column vuot qua kich thuoc Row thi cho column xuong hang
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide { .row {
+          margin: :left -4px;
+          margin: :right -4 px;
+    }
+        width: 664px;
+    }
+
+}
+/* PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .wide {
+        width: 984px;
+    }
+}
